@@ -24,6 +24,8 @@
     ],
     "rules": {
       "prettier/prettier": "error",
+      "class-method-use-this": "off",
+      "@typescript-eslint": "off",
       "import/extensions": [
         "error",
         "ignorePackages",
