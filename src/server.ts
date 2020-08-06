@@ -5,8 +5,10 @@ import routes from './routes';
 import './database';
 import uploadConfig from './config/upload';
 import AppError from './errors/AppError';
+import cors from 'cors';
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 app.use('/files', express.static(uploadConfig.directory));
 app.use(routes);
